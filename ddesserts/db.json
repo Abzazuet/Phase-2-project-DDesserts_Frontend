@@ -1,0 +1,40 @@
+{
+    "desserts": [
+        {
+            "id":0,
+            "name":"Chocolate Keto Bomb",
+            "image": "image",
+            "macronutrients":{
+                "carbohydrates":200,
+                "proteins":12,
+                "fat":5
+            },
+            "ingredients": ["sugar", "cocoa", "almond"],
+            "regimes":["keto", "sugar free", "paleo"]
+        },
+        {
+            "id":1,
+            "name":"Chocolate Keto Bomb",
+            "image": "image",
+            "macronutrients":{
+                "carbohydrates":200,
+                "proteins":12,
+                "fat":5
+            },
+            "ingredients": ["sugar", "cocoa", "almond"],
+            "regimes":["keto", "sugar free", "paleo"]
+        },
+        {
+            "id":2,
+            "name":"Chocolate Keto Bomb",
+            "image": "image",
+            "macronutrients":{
+                "carbohydrates":200,
+                "proteins":12,
+                "fat":5
+            },
+            "ingredients": ["sugar", "cocoa", "almond"],
+            "regimes":["keto", "sugar free", "paleo"]
+        }
+    ]
+}
