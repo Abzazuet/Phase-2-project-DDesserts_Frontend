@@ -25,12 +25,14 @@ function TopNavbar() {
                             <LinkContainer to="/addDessert">
                                 <NavDropdown.Item href="#addDessert">Add Dessert</NavDropdown.Item>
                             </LinkContainer>
+                            {/*
                             <LinkContainer to="/addDessert">
                                 <NavDropdown.Item href="#addDessert">Delete Dessert</NavDropdown.Item>
                             </LinkContainer>
                             <LinkContainer to="/addDessert">
                                 <NavDropdown.Item href="#addDessert">Update Dessert</NavDropdown.Item>
                             </LinkContainer>
+    */}
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
