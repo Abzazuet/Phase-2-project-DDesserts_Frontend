@@ -1,0 +1,6 @@
+.home{
+    margin: 0 auto; 
+    padding: 15px;
+    color: var(--font-color);
+    max-width: 50%;
+}

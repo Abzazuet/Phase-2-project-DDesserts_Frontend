@@ -1,0 +1,14 @@
+.card-style{
+    margin: 15px auto;
+    background-color: var(--card-background);
+}
+.card-style img{
+    margin: 10px auto;
+}
+.subtitle{
+    color: white;
+}
+.btn{
+    background-color: var(--navBackground);
+    border: none;
+}
