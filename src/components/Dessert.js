@@ -27,7 +27,7 @@ function Dessert({ dessert }) {
                     </Card.Text>
                     <Card.Subtitle className="mb-2 subtitle">Food regimes</Card.Subtitle>
                     <Card.Text>
-                        {dessert.regimes.map(regime => <span>*{regime} </span>)}
+                        {dessert.regimes.map(regime => <span key={regime}>*{regime} </span>)}
                     </Card.Text>
 
                     <Button variant="primary" className="btn" onClick={handleClick}>Ingredients</Button>
@@ -43,7 +43,7 @@ function Dessert({ dessert }) {
                     <Card.Title>{dessert.name}</Card.Title>
                     <Card.Subtitle className="mb-2 subtitle">Ingredients</Card.Subtitle>
                     <Card.Text>
-                        {dessert.ingredients.map(ingredient => <span>{ingredient} <br/></span>)}
+                        {dessert.ingredients.map(ingredient => <span key={ingredient}>{ingredient} <br/></span>)}
                     </Card.Text>
 
                     <Button variant="primary" className="btn" onClick={handleClick}>Nutrition</Button>

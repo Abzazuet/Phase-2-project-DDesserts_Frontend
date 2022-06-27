@@ -1,6 +1,18 @@
-.home{
-    margin: 0 auto; 
-    padding: 15px;
-    color: var(--font-color);
-    max-width: 50%;
+.home {
+  background-image: url("../img/background.jpeg");
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(0 0 0 / .5),
+      rgba(255 0 150 / 69%)
+    ),
+    url(../img/background.jpeg);
+  background-size: cover;
+}
+
+.phrase-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  color: var(--background);
 }
