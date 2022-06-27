@@ -1,12 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { LinkContainer } from "react-router-bootstrap";
 import React, { useState } from "react";
 import "../styles/TopNavbar.css";
+import AdminOptions from "./AdminOptions";
 
-function TopNavbar() {
+function TopNavbar({ adminLogged }) {
   const [expanded, setExpanded] = useState(false);
   return (
     <Navbar
@@ -40,24 +40,12 @@ function TopNavbar() {
                 Desserts
               </Nav.Link>
             </LinkContainer>
-            <NavDropdown title="Admin options" id="basic-nav-dropdown">
-              <LinkContainer to="/addDessert">
-                <NavDropdown.Item
-                  href="#addDessert"
-                  onClick={() => setExpanded(false)}
-                >
-                  Add Dessert
-                </NavDropdown.Item>
-              </LinkContainer>
-              {/*
-                            <LinkContainer to="/addDessert">
-                                <NavDropdown.Item href="#addDessert">Delete Dessert</NavDropdown.Item>
-                            </LinkContainer>
-                            <LinkContainer to="/addDessert">
-                                <NavDropdown.Item href="#addDessert">Update Dessert</NavDropdown.Item>
-                            </LinkContainer>
-    */}
-            </NavDropdown>
+            <LinkContainer to="/login">
+              <Nav.Link href="#login" onClick={() => setExpanded(false)}>
+                {adminLogged ? "Log out" : "Log in"}
+              </Nav.Link>
+            </LinkContainer>
+            {adminLogged ? <AdminOptions setExpanded={setExpanded} /> : ""}
           </Nav>
         </Navbar.Collapse>
       </Container>

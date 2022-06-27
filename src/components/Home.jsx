@@ -1,7 +1,7 @@
 import "../styles/Home.css";
 function Home() {
   return (
-    <div className="home">
+    <div className="background">
       <div className="phrase-container">
         <h1>Daniela's Desserts</h1>
         <h2>

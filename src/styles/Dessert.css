@@ -1,13 +1,13 @@
 .card-style {
-  margin: 15px auto;
+  margin: .5rem auto;
   border-radius: 1rem;
   background: rgb(216, 59, 216);
   background: linear-gradient(
     104deg,
     rgba(216, 59, 216, 1) 0%,
-    rgba(229, 152, 155, 1) 100%
+    #e5989b 100%
   );
-  box-shadow: 0 0 1rem #000;
+  box-shadow: .5rem 0 1rem #000;
   transition: 0.4s ease-out;
 }
 .card-style:hover {
