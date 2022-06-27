@@ -4,7 +4,7 @@ import Desserts from "./Desserts";
 import AddDessert from "./AddDessert";
 import AboutUs from "./AboutUs";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import '../styles/App.css';
+import "../styles/App.css";
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
           <Route exact path="/addDessert" element={<AddDessert />} />
         </Routes>
       </BrowserRouter>
-
     </div>
   );
 }

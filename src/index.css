@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');:root {
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+:root {
   --background: #ffcdb2;
   --navBackground: #d83bd8;
   --font-color: #141414;
@@ -21,17 +22,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-h1{
-  font-family: 'Dancing Script', cursive;
+h1 {
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
   font-size: 3rem;
 }
-h2{
-  font-family: 'Dancing Script', cursive;
+h2 {
+  font-family: "Dancing Script", cursive;
   font-weight: 500;
   font-size: 2rem;
 }
-p{
-  font-family: 'Poppins', sans-serif;
+p {
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
