@@ -1,4 +1,6 @@
 import "../styles/Home.css";
+import Testimonials from "./Testimonials";
+
 function Home() {
   return (
     <div className="background">
@@ -9,7 +11,10 @@ function Home() {
           food regimes, such as vegan, keto, or just doing a diet but craving
           something sweet and tasty.
         </h2>
+        <h1>Testimonials</h1>
+        <Testimonials />
       </div>
+      
     </div>
   );
 }

@@ -1,3 +1,4 @@
+
 function AboutUs() {
   return (
     <div className="background">
@@ -16,7 +17,6 @@ function AboutUs() {
           regime, so no one has to crave anyon else's dessert due to being on a
           diet or a strict food regime.
         </p>
-        <h2>Testimonials</h2>
       </div>
     </div>
   );
