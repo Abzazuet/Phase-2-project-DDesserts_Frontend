@@ -63,7 +63,7 @@ function AddDessert() {
     }
     function handleSubmit(e) {
         e.preventDefault();
-        fetch('http://localhost:3000/desserts', {
+        fetch('https://immense-garden-31850.herokuapp.com/desserts', {
             method: 'POST',
             body: JSON.stringify(params),
             headers: {

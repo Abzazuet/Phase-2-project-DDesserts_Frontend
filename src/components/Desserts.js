@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 function Desserts() {
     const [desserts, setDesserts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/desserts')
+        fetch('https://immense-garden-31850.herokuapp.com/desserts')
             .then(res => res.json())
             .then(data => setDesserts(data))
     }, [])
