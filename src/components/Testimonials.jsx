@@ -12,7 +12,7 @@ function Testimonials() {
           <h3>Cafeteria Il Bolbo </h3>
           <p>
             We started buying this desserts due to the great variety of regimes
-            they have. Now we can offer desserts for people on special diets.
+            they have.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
