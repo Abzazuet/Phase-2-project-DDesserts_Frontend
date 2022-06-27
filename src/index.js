@@ -4,26 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import Home from "./components/Home";
-import Desserts from "./components/Desserts";
-import AddDessert from "./components/AddDessert";
-import AboutUs from "./components/AboutUs";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-
-      <App />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/aboutUs" element={<AboutUs />} />
-        <Route exact path="/desserts" element={<Desserts />} />
-        <Route exact path="/addDessert" element={<AddDessert />} />
-
-      </Routes>
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
 

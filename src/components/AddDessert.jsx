@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import "./AddDessert.css";
+import "../styles/AddDessert.css";
 function AddDessert() {
     const [ingredients, setIngredients] = useState([]);
     const [changeIngredient, setChangeIngredient] = useState('');

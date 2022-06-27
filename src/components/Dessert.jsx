@@ -1,7 +1,7 @@
-import './Dessert.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
+import "../styles/Dessert.css";
 function Dessert({ dessert }) {
     const [showIngredient, setShowIngredient] = useState(false);
     function handleClick() {
