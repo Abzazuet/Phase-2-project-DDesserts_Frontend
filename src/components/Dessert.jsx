@@ -7,6 +7,7 @@ function Dessert({ dessert }) {
   function handleClick() {
     setShowIngredient(!showIngredient);
   }
+  
   if (!showIngredient) {
     return (
       <Card style={{ width: "18rem" }} className="card-style">
@@ -16,18 +17,10 @@ function Dessert({ dessert }) {
           <Card.Subtitle className="mb-2 subtitle">
             Macronutrients
           </Card.Subtitle>
-          <Card.Text>
-            {Object.keys(dessert.macronutrients).map((macronutrient) => {
-              return (
-                <span key={macronutrient}>
-                  <span>{macronutrient}: </span>
-                  <span> {dessert.macronutrients[macronutrient]}g</span>
-                  <br />
-                </span>
-              );
-            })}
-          </Card.Text>
-          <Card.Subtitle className="mb-2 subtitle">Food regimes</Card.Subtitle>
+          <span>Carbohydrates: {dessert.Carbohydrates} g</span> <br />
+          <span>Proteins: {dessert.Proteins} g</span> <br />
+          <span>Fat: {dessert.Fat} g</span> <br />
+          <Card.Subtitle className="mb-1 subtitle mt-2">Food regimes</Card.Subtitle>
           <Card.Text>
             {dessert.regimes.map((regime) => (
               <span key={regime}>*{regime} </span>

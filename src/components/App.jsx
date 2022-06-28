@@ -2,6 +2,10 @@ import TopNavbar from "./TopNavbar";
 import Home from "./Home";
 import Desserts from "./Desserts";
 import AddDessert from "./AddDessert";
+import DeleteDessert from "./DeleteDessert";
+
+import UpdateDessert from "./UpdateDessert";
+
 import Login from "./Login";
 
 import AboutUs from "./AboutUs";
@@ -37,6 +41,8 @@ function App() {
             }
           />
           <Route exact path="/addDessert" element={<AddDessert />} />
+          <Route exact path="/deleteDessert" element={<DeleteDessert desserts={desserts} />} />
+          <Route exact path="/updateDessert" element={<UpdateDessert desserts={desserts}/>} />
         </Routes>
       </BrowserRouter>
     </div>

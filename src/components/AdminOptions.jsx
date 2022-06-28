@@ -8,14 +8,22 @@ function AdminOptions({ setExpanded }) {
           Add Dessert
         </NavDropdown.Item>
       </LinkContainer>
-      {/*
-                            <LinkContainer to="/addDessert">
-                                <NavDropdown.Item href="#addDessert">Delete Dessert</NavDropdown.Item>
-                            </LinkContainer>
-                            <LinkContainer to="/addDessert">
-                                <NavDropdown.Item href="#addDessert">Update Dessert</NavDropdown.Item>
-                            </LinkContainer>
-    */}
+      <LinkContainer to="/deleteDessert">
+        <NavDropdown.Item
+          href="#deleteDessert"
+          onClick={() => setExpanded(false)}
+        >
+          Delete Dessert
+        </NavDropdown.Item>
+      </LinkContainer>
+      <LinkContainer to="/updateDessert">
+        <NavDropdown.Item
+          href="#updateDessert"
+          onClick={() => setExpanded(false)}
+        >
+          Update Dessert
+        </NavDropdown.Item>
+      </LinkContainer>
     </NavDropdown>
   );
 }
