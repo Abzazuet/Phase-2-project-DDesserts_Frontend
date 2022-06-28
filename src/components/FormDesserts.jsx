@@ -95,7 +95,7 @@ function FormDessert({ selectedDessert }) {
           <Form.Label>Food ingredients:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ingredient"
+            placeholder="Separate with comma (,) Ex. milk,sugar,chocolate"
             onChange={handleChangeText}
             value={params.ingredients}
           />
