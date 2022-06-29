@@ -3,7 +3,7 @@ import DisplayDessertsDropdown from "./DisplayDessertsDropdown";
 function UpdateDessert({ desserts }) {
   return (
     <div className="background">
-      <DisplayDessertsDropdown desserts={desserts} />
+      <DisplayDessertsDropdown desserts={desserts} fetchRequest={"update"} />
     </div>
   );
 }

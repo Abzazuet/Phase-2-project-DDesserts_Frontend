@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "../styles/AddDessert.css";
-function FormDessert({ selectedDessert }) {
+function FormDessert({ selectedDessert, fetchRequest }) {
   const [params, setParams] = useState({
     name: "",
     ingredients: "",
@@ -29,7 +29,6 @@ function FormDessert({ selectedDessert }) {
   }, [setParams, selectedDessert]);
 
   function handleChangeText(event) {
-    console.log(params);
     setParams({
       ...params,
       [event.target.id]: event.target.value,
@@ -37,7 +36,7 @@ function FormDessert({ selectedDessert }) {
     if (event.target.id === "ingredients") {
       setParams({
         ...params,
-        [event.target.id]: event.target.value.split(','),
+        [event.target.id]: event.target.value.split(","),
       });
     }
   }
@@ -56,22 +55,10 @@ function FormDessert({ selectedDessert }) {
       });
     }
   }
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    fetch("https://immense-garden-31850.herokuapp.com/desserts", {
-      method: "POST",
-      body: JSON.stringify(params),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then((response) => response);
-
-  }
 
   return (
     <div className="background">
-      <Form className="form" onSubmit={handleSubmit}>
+      <Form className="form" onSubmit={(e) => fetchRequest(e, params)}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Dessert Name</Form.Label>
           <Form.Control

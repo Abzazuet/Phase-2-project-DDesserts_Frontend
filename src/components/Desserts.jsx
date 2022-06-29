@@ -1,9 +1,14 @@
 import Dessert from "./Dessert";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import { useEffect } from "react";
 
-function Desserts({desserts}) {
-
+function Desserts({ desserts, setDesserts }) {
+  useEffect(() => {
+    fetch("https://immense-garden-31850.herokuapp.com/desserts")
+      .then((res) => res.json())
+      .then((data) => setDesserts(data));
+  }, [setDesserts]);
   return (
     <div className="background">
       <Container>
