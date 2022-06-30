@@ -11,8 +11,7 @@ function DisplayDessertsDropdown({ desserts, fetchRequest }) {
       desserts.filter((dessert) => dessert.name === event.target.value)
     );
   }
-  let requestType = fetchRequest === "update" ? "PATCH" : "DELETE";
-
+  let requestType = fetchRequest === "update" ? "PUT" : "DELETE";
   function fetchFunction(e, params) {
     e.preventDefault();
     fetch(
@@ -25,9 +24,7 @@ function DisplayDessertsDropdown({ desserts, fetchRequest }) {
         },
       }
     ).then((response) => {
-      window.alert(
-        `Dessert ${requestType === "PATCH" ? "updated" : "deleted"}`
-      );
+      window.alert(`Dessert ${requestType === "PUT" ? "updated" : "deleted"}`);
       navigate("/desserts");
     });
   }
